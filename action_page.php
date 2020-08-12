@@ -1,8 +1,9 @@
 <?php
 session_start();
 
-$con = mysqli_connect('localhost','id14578692_musicwebsite','Lance-champ-01');
-mysqli_select_db($con,'id14578692_website2');
+$con = mysqli_connect('sql307.epizy.com','epiz_26489704','
+nIu1aPpQnj');
+mysqli_select_db($con,'epiz_26489704_musicwebsite');
 
 $NAme = $_POST['nAme'];
 $UName = $_POST['uName'];

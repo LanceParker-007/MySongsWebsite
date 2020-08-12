@@ -44,8 +44,8 @@ body
     } 
     .swiper-slide .videoBG
     {
-        width: 576px;
-        height: 324px;
+        width: 570px;
+        height: 320px;
     }
 }
 
@@ -97,7 +97,7 @@ body
     }
     body 
     {
-        background: rgb(19, 19, 18);
+        background-image: url('pOstErs/bg123_Moment.jpg');
     }
 }
 

@@ -100,7 +100,7 @@ body
   background-size: cover;
   background: rgb(72, 73, 68);
   border-radius: 25px;
-  box-shadow:.5px .5px 10px 20px rgb(114, 111, 111);
+  box-shadow:.5px .5px 10px 20px rgb(177, 29, 29);
 }
 
 @media screen and (min-width: 415px)
@@ -149,7 +149,7 @@ body
   }
   body 
   {
-    background-image: linear-gradient(125deg, rgb(204, 125, 21), #a4c22dec, #da123d);
+    background-image: linear-gradient(125deg, rgb(19, 27, 61), #100d2bec, #184eb3);
         background-size: 200% 200%;
         background-position: center;
         animation: bganimation 10s infinite;
