@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel='stylesheet' type="text/css" href="ListenAudiosStyle.css">
+    <title>__Enjoy_Audios__</title>
+</head>
+
+<body>
+    <!-- ________________________Search AND Dropdown________________ -->
+    <!-- <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <a href="#about">About</a>
+            <a href="#base">Base</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+            <a href="#custom">Custom</a>
+            <a href="#support">Support</a>
+            <a href="#tools">Tools</a>
+        </div>
+    </div> -->
+
+    <!-- <div class="topnav">
+        <a href="active" href="#">HOME</a>
+        <a href="#">Stream Videos</a>
+        <input type="text" placeholder="Search..">
+    </div> -->
+
+    <!-- ___Swiper BOX___________ -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <audio controls loop style="width: 100%;">
+                    <source src="audioANDvideoFiles/Alec Benjamin - Let Me Down Slowly [Official Music Video].mp3">
+                </audio>
+                <h1>Alec Benjamin - Let Me Down Slowly</h1>
+            </div>
+            <div class="swiper-slide">
+                <audio controls loop style="width: 100%; ">
+                    <source src="audioANDvideoFiles/Powfu - death bed (coffee for your head).mp3">
+                </audio>
+                <h1>Powfu - death bed (coffee for your head)</h1>
+            </div>
+            <div class="swiper-slide">
+                <audio controls loop style="width: 100%;">
+                    <source src="audioANDvideoFiles/Sub Urban - Cradles (Lyrics).mp3">
+                </audio>
+                <h1>Sub Urban - Cradles</h1>
+            </div>
+            <div class="swiper-slide">
+                <audio controls loop style="width: 100%;">
+                    <source src="audioANDvideoFiles/RosesSaint Jhn ft. Nicki Minaj & Imanbek (REMIX).mp3">
+                </audio>
+                <h1>RosesSaint Jhn ft. Nicki Minaj & Imanbek (REMIX)</h1>
+            </div>
+            <div class="swiper-slide">
+                <audio controls loop style="width: 100%;">
+                    <source src="audioANDvideoFiles/Such a Whore (Stellular Remix) [Bass Boosted].mp3">
+                </audio>
+                <h1>Such a Whore (Stellular Remix)</h1>
+            </div>
+            <div class="swiper-slide">
+                <audio controls loop style="width: 100%;">
+                    <source src="audioANDvideoFiles/Surf Mesa - ily (i love you baby) ft. Emilee.mp3">
+                </audio>
+                <h1>Surf Mesa - ily (i love you baby)</h1>
+            </div>
+            <div class="swiper-slide">
+                <audio controls loop style="width: 100%;">
+                    <source src="audioANDvideoFiles/Ali Gatie - It's You (Official Music Video).mp3">
+                </audio>
+                <h1>Ali Gatie - It's You</h1>
+            </div>
+            <div class="swiper-slide">
+                <audio controls loop style="width: 100%;">
+                    <source
+                        src="audioANDvideoFiles/Kina - Can We Kiss Forever (ft. Adriana Proenza) Lyrics Blue Dream.mp3">
+                </audio>
+                <h1>Kina - Can We Kiss Forever (ft. Adriana Proenza)</h1>
+            </div>
+            <div class="swiper-slide">
+                <audio controls loop style="width: 100%;">
+                    <source src="audioANDvideoFiles/PUBLIC - Make You Mine (Official Lyric Video).mp3">
+                </audio>
+                <h1>PUBLIC - Make You Mine</h1>
+            </div>
+            <div class="swiper-slide">
+                <audio controls loop style="width: 100%;">
+                    <source src="audioANDvideoFiles/Roddy Ricch - The Box [Official Audio].mp3">
+                </audio>
+                <h1>Roddy Ricch - The Box</h1>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <video id="videoBG" poster="pOstErs/Band_Stock_1_Moment.jpg" autoplay muted loop>
+        <source src="Backgrounds/Digital_Audio_Spectrum_Colorful_02.mp4" type="video/mp4" />
+    </video>
+    <!--_______________ Swiper.js_____________________ -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'cube',
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: .94,
+            },
+            loop: true,
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: true,
+            },
+        });
+    </script>
+    <!-- _____________________Dropdown And Search________________________-->
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

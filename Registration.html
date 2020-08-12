@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Signup</title>
+    <link rel="stylesheet" href="RegistrationStyle.css">
+</head>
+<style>
+    /* Titile Animation */
+    .mh {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        background: none;
+        width: auto;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        color: #000;
+        font-size: 3.6em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    h1 span {
+        display: table-cell;
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+        animation: animate 3s linear infinite;
+    }
+
+    h1 span:nth-child(1) {
+        animation-delay: 1s;
+    }
+
+    h1 span:nth-child(2) {
+        animation-delay: 1.5s;
+    }
+
+    h1 span:nth-child(3) {
+        animation-delay: 2s;
+    }
+
+    h1 span:nth-child(4) {
+        animation-delay: 2.5s;
+    }
+
+    h1 span:nth-child(5) {
+        animation-delay: 3s;
+    }
+
+    h1 span:nth-child(6) {
+        animation-delay: 3.5s;
+    }
+
+    h1 span:nth-child(7) {
+        animation-delay: 4s;
+    }
+
+    h1 span:nth-child(8) {
+        animation-delay: 4.5s;
+    }
+
+
+    @keyframes animate {
+
+        0%,
+        100% {
+            color: #fff;
+            filter: blur(2px);
+            text-shadow: 0 0 10px #00b3ff,
+                0 0 20px #c8ff00,
+                0 0 40px #90d116,
+                0 0 80px #00b3ff,
+                0 0 12px #00b3ff,
+                0 0 60px #ff00aa,
+                0 0 30px #00b3ff,
+                0 0 40px #00b3ff,
+                0 0 50px #00b3ff;
+        }
+
+        5%,
+        95% {
+            color: rgb(255, 0, 0);
+            filter: blur(0px);
+            text-shadow: 0 0 1px none;
+        }
+    }
+</style>
+
+<body>
+    <div class="mh">
+        <h1>
+            <span style="font-family: 'Courier New', Courier, monospace;">M</span>
+            <span style="font-family: 'Courier New', Courier, monospace">Y</span>
+            <span style="font-family: 'courier New', Courier, monospace">:</span>
+            <span style="font-family: 'courier New', Courier, monospace">S</span>
+            <span style="font-family: 'courier New', Courier, monospace">O</span>
+            <span style="font-family: 'courier New', Courier, monospace">N</span>
+            <span style="font-family: 'courier New', Courier, monospace">G</span>
+            <span style="font-family: 'courier New', Courier, monospace">S</span>
+        </h1>
+    </div>
+    <form name="form" action="action_page.php" method="POST">
+        <div class="sign-up-form">
+            <h2>Sign Up</h2>
+            <input type="text" class="input-box" placeholder="Your Good Name" required name="nAme" /><br>
+            <input type="text" class="input-box" placeholder="Username" required name="uName" /><br>
+            <input type="email" class="input-box" placeholder="Your Email" required name="eMail" /><br>
+            <input type="password" class="input-box" placeholder="Your Password" required name="pAssword" /><br><br>
+            <p><span><input type="checkbox" required></span> *By logging in, you agree to our
+                <a href="TermsofUse.html">
+                    Terms of Use</a> and to receive emails & updates and acknowledge that you read our Privacy Policy.
+                </a>
+            </p><br>
+            <input class="sign-btn" type="submit" name="submit" value="SUBMIT" />
+        </div>
+    </form>
+    <div class="sign-up-form">
+        <!-- <h3>OR</h3> -->
+        <p style="margin-top: 20px;">Already have an account?</p><br>
+        <a href="SignIn.html"><button class="sign-btn">SIGN IN</button></a>
+    </div>
+</body>
+
+</html>

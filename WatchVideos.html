@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel='stylesheet' type="text/css" href="WatchVideosStyle.css">
+    <title>__WatchVideos__</title>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <video class="videoBG" width="100%" height="100%" poster="pOstErs/poster_ily.jpg" controls loop>
+                    <source src="audioANDvideoFiles/Surf Mesa - ily (i love you baby) ft. Emilee.mp4">
+                </video>
+            </div>
+            <div class="swiper-slide">
+                <video class="videoBG" width="100%" height="100%" poster="pOstErs/poster_letmedownslowly.jpg" controls
+                    loop>
+                    <source src="audioANDvideoFiles/Alec Benjamin - Let Me Down Slowly [Official Music Video].mp4">
+                </video>
+            </div>
+            <div class="swiper-slide">
+                <video class="videoBG" width="100%" height="100%" poster="pOstErs/poster_itsyou.jpg" controls loop>
+                    <source src="audioANDvideoFiles/Ali Gatie - It's You (Official Music Video).mp4">
+                </video>
+            </div>
+            <div class="swiper-slide">
+                <video class="videoBG" width="100%" height="100%" poster="pOstErs/poster_makeyoumine.jpg" controls loop>
+                    <source
+                        src="audioANDvideoFiles/PUBLIC - Make You Mine (Put Your Hand in Mine) [Official Video].mp4">
+                </video>
+            </div>
+            <div class="swiper-slide">
+                <video class="videoBG" width="100%" height="100%" poster="pOstErs/poster_can wekissforforever.jpg"
+                    controls loop>
+                    <source
+                        src="audioANDvideoFiles/Kina - Can We Kiss Forever (Official Video) ft. Adriana Proenza.mp4">
+                </video>
+            </div>
+            <div class="swiper-slide">
+                <video class="videoBG" width="100%" height="100%" poster="pOstErs/poster_powfudeathbed.jpg" controls
+                    loop>
+                    <source src="audioANDvideoFiles/Powfu - death bed (coffee for your head).mp4">
+                </video>
+            </div>
+            <div class="swiper-slide">
+                <video class="videoBG" width="100%" height="100%" poster="pOstErs/poster_roses.jpg" controls loop>
+                    <source src="audioANDvideoFiles/Roses Saint Jhn ft. Nicki Minaj & Imanbek (REMIX).mp4">
+                </video>
+            </div>
+            <div class="swiper-slide">
+                <video class="videoBG" width="100%" height="100%" poster="pOstErs/poster_suburban.jpg" controls loop>
+                    <source src="audioANDvideoFiles/Sub Urban - Cradles [OFFICIAL MUSIC VIDEO].mp4">
+                </video>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <video id="videoBG" poster="videoBackGroundForMobile.jpg" autoplay muted loop>
+        <source src="Backgrounds/bg123.mp4" type="video/mp4" />
+    </video>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 500,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

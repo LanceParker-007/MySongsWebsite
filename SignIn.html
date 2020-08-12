@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SIGN IN / Enjoy</title>
+    <link rel="stylesheet" href="SignInStyle.css">
+</head>
+<style>
+    /* Titile Animation */
+    .mh {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        background: none;
+        width: auto;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        color: #000;
+        font-size: 3.6em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    h1 span {
+        display: table-cell;
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+        animation: animate 2s linear infinite;
+    }
+
+    h1 span:nth-child(1) {
+        animation-delay: .75s;
+    }
+
+    h1 span:nth-child(2) {
+        animation-delay: 1.5s;
+    }
+
+    h1 span:nth-child(3) {
+        animation-delay: 1s;
+    }
+
+    h1 span:nth-child(4) {
+        animation-delay: 2.5s;
+    }
+
+    h1 span:nth-child(5) {
+        animation-delay: 3s;
+    }
+
+    h1 span:nth-child(6) {
+        animation-delay: 2s;
+    }
+
+    h1 span:nth-child(7) {
+        animation-delay: 2.5s;
+    }
+
+    h1 span:nth-child(8) {
+        animation-delay: 3s;
+    }
+
+
+    @keyframes animate {
+
+        0%,
+        100% {
+            color: #fff;
+            filter: blur(2px);
+            text-shadow: 0 0 10px #00b3ff,
+                0 0 20px #c8ff00,
+                0 0 40px #90d116,
+                0 0 80px #00b3ff,
+                0 0 12px #00b3ff,
+                0 0 60px #ff00aa,
+                0 0 30px #00b3ff,
+                0 0 40px #00b3ff,
+                0 0 50px #00b3ff;
+        }
+
+        5%,
+        95% {
+            color: rgb(255, 0, 0);
+            filter: blur(0px);
+            text-shadow: 0 0 1px none;
+        }
+    }
+</style>
+
+<body>
+    <div class="mh">
+        <h1>
+            <span style="font-family: 'Courier New', Courier, monospace;">M</span>
+            <span style="font-family: 'Courier New', Courier, monospace">Y</span>
+            <span style="font-family: 'courier New', Courier, monospace">:</span>
+            <span style="font-family: 'courier New', Courier, monospace">S</span>
+            <span style="font-family: 'courier New', Courier, monospace">O</span>
+            <span style="font-family: 'courier New', Courier, monospace">N</span>
+            <span style="font-family: 'courier New', Courier, monospace">G</span>
+            <span style="font-family: 'courier New', Courier, monospace">S</span>
+        </h1>
+    </div>
+    <form>
+        <div class="sign-up-form" action="login.php" method='POST'>
+            <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">SIGN IN</h2>
+            <input type="text" class="input-box" placeholder="Your Username" required name="uname"><br>
+            <input type="password" class="input-box" placeholder="Your Password" required name="password"><br><br>
+            <button class="sign-btn" type="submit" name="login" value="login">Log In</button>
+            <br>
+            <br>
+        </div>
+    </form>
+    <div class="sign-up-form">
+        <h1>OR</h1>
+        <p>You don't have an account ?</p>
+        <br>
+        <a href="Registration.html"><button class="sign-btn" style="width: 200px;">Register Here</button></a>
+        <br>
+        <br>
+        <p style="padding: 3px; background-color: #e70f3e; width: 300px; border-radius: 50px;">*I shall not be using any
+            of your
+            information.*</p>
+    </div>
+    <br>
+</body>
+
+</html>

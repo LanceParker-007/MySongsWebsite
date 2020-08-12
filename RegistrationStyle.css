@@ -1,0 +1,90 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{ 
+    background-image: linear-gradient(45deg,rgb(43, 42, 42),rgb(66, 71, 56),rgb(19, 11, 15));
+    background-size: 500% 500%;
+    background-position: center;
+    animation: bganimation 10s infinite;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+@keyframes bganimation
+{
+    0%
+    {
+        background-position: 0% 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0% 50%;
+    }
+}
+.sign-up-form
+{
+ width: 300px;
+ box-shadow: 0 0 33px rgba(100,100,100,100000);
+ background: #fff;
+ padding: 10px 20px 20px 20px;
+ margin: 2% auto 5px;
+ text-align: center;  
+ border-radius: 20px; 
+ box-shadow: 1px 1px 10px 10px rgb(163, 214, 24);
+}
+
+.sign-up-form h2
+{
+    color: #1c8adb;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.input-box
+{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    margin:7px -10px;
+    width: 80%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+.sign-btn
+{
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sign-btn:hover
+{
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #ec9109;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 5px rgb(38, 39, 36);
+}
+
+@media screen and (min-width:415px)
+{
+    .sign-up-form
+    {
+        padding: 10px 50px 20px 50px;
+    }
+    .input-box
+    {
+        width: 90%;
+    }
+}
