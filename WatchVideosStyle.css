@@ -28,19 +28,24 @@ body
 {
     background-position: center;
     background-size: cover;
-    width: 373px;
+    width: 365px;
     height: 209.82px;
     background: #000;
-    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,rgba(31, 30, 30, 0.993));
+    -webkit-box-reflect: below 10px linear-gradient(transparent,transparent,rgba(31, 30, 30, 0.993));
     box-shadow:.5px .5px 10px 10px yellowgreen;
 }
 
 @media screen and (min-width: 415px)
 {
+    .swiper-container
+    {
+        padding-top: 20px;
+    }
+    
     .swiper-slide
     {
-        width: 576px;
-        height: 324px;
+        width: 570px;
+        height: 318px;
     } 
     .swiper-slide .videoBG
     {
@@ -97,7 +102,27 @@ body
     }
     body 
     {
-        background-image: url('pOstErs/bg123_Moment.jpg');
+        background-image: linear-gradient(125deg, black, #848580ec, #030303);
+        background-size: 200% 200%;
+        background-position: center;
+        animation: bganimation 10s infinite;
+        background-repeat: no-repeat
+    }
+
+    @keyframes bganimation 
+    {
+        0% 
+        {
+            background-position: 0% 50%;
+        }
+        50% 
+        {
+            background-position: 100% 50%;
+        }
+        100% 
+        {
+            background-position: 0% 50%;
+        }
     }
 }
 
