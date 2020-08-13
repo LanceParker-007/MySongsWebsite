@@ -33,10 +33,9 @@ body
 .sign-up-form
 {
  width: 300px;
- box-shadow: 0 0 33px rgba(100,100,100,100000);
  background: aliceblue;
- padding: 10px 50px 20px 50px;
- margin: 2% auto 0;
+ padding: 10px 20px 20px 20px;
+ margin: 5% auto;
  text-align: center;  
  border-radius: 20px; 
  box-shadow: 1px 1px 10px 10px rgb(163, 214, 24);
@@ -88,14 +87,4 @@ body
     {
         width: 90%;
     }
-}
-
-/* _________________ */
-.error
-{
-    background: rgb(204, 56, 56);
-    color: black;
-    padding: 10px;
-    width: 90%;
-    border-radius: 10px;
 }
